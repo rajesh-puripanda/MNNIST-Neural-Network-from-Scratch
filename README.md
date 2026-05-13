@@ -1,8 +1,8 @@
-# 🧠 MNIST Neural Network from Scratch
+# MNIST Neural Network from Scratch
 
 This repository contains a ground-up implementation of a two-layer feedforward neural network designed for handwritten digit classification. Built using only **NumPy**, this project serves as a deep dive into the fundamental linear algebra and calculus that power modern deep learning, moving beyond the abstraction of high-level frameworks.
 
-### 🔬 Technical Architecture
+###  Technical Architecture
 The network follows a classic MLP (Multi-Layer Perceptron) architecture with the following specifications:
 *   **Input Layer ($a^{[0]}$):** 784 neurons (28x28 flattened grayscale pixels).
 *   **Hidden Layer ($a^{[1]}$):** 10 neurons with **ReLU** (Rectified Linear Unit) activation.
@@ -10,7 +10,7 @@ The network follows a classic MLP (Multi-Layer Perceptron) architecture with the
 
 ---
 
-### 📐 Mathematical Framework
+###  Mathematical Framework
 
 #### 1. Forward Propagation
 The forward pass computes the transformations through each layer to generate a prediction.
@@ -45,12 +45,12 @@ $$b := b - \alpha db$$
 
 ---
 
-### 🚀 Implementation Highlights
+###  Implementation Highlights
 *   **Vectorization:** Utilizing NumPy's dot products to process the entire training set ($m$ examples) simultaneously, significantly increasing computational efficiency compared to iterative loops.
 *   **One-Hot Encoding:** Converting integer labels into binary vectors to facilitate the calculation of the error gradient ($A^{[2]} - Y$).
 *   **Feature Scaling:** Standardizing pixel values from $[0, 255]$ to $[0, 1]$ to ensure stable weight updates and faster convergence during training.
 
-### 📈 Results
+###  Results
 The model achieves an accuracy of **~85%** on both training and validation (dev) sets. Given the simplicity of a single hidden layer with only 10 units, this demonstrates the power of the underlying mathematics in capturing the hierarchical features of numerical data.
 
 ### 🤝 Acknowledgments
