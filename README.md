@@ -53,5 +53,5 @@ $$b := b - \alpha db$$
 ###  Results
 The model achieves an accuracy of **~85%** on both training and validation (dev) sets. Given the simplicity of a single hidden layer with only 10 units, this demonstrates the power of the underlying mathematics in capturing the hierarchical features of numerical data.
 
-### 🤝 Acknowledgments
+###  Acknowledgments
 This implementation was inspired by the instructional work of **Samson Zhang**. It serves as a pedagogical bridge between theoretical machine learning and practical code implementation.
